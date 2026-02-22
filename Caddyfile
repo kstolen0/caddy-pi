@@ -1,4 +1,8 @@
 
+{ 
+email kristian@kristianstolen.com
+}
+
 pi.kristianstolen.com {
-reverse_proxy clickr:8080/static/
+reverse_proxy /* clickr:8080
 }
