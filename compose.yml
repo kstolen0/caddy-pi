@@ -3,7 +3,7 @@ services:
     networks:
       - pi
     container_name: caddy
-    image: caddy:latest
+    image: caddy:2.11-alpine
     ports:
       - 80:80
       - 443:443
