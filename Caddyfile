@@ -6,3 +6,9 @@ email kristian@kristianstolen.com
 pi.kristianstolen.com {
 reverse_proxy /* clickr:8080
 }
+
+chain.kristianstolen.com {
+root * /usr/share/caddy/host/chain
+  try_files {path} /index.html
+  file_server
+}

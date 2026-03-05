@@ -11,6 +11,14 @@ services:
     volumes:
       - ./Caddyfile:/etc/caddy/Caddyfile
       - ./srv:/srv
+      - ../state-machine/dist/:/usr/share/caddy/host/chain:ro
+      - caddy_data:/data
+      - caddy_config:/config
+
+volumes:
+  caddy_data:
+  caddy_config:
+
 networks:
   pi:
     external: true
