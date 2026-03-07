@@ -12,6 +12,7 @@ services:
       - ./Caddyfile:/etc/caddy/Caddyfile
       - ./srv:/srv
       - ../state-machine/dist/:/usr/share/caddy/host/chain:ro
+      - ../rtp-engine/dist/:/usr/share/caddy/host/rtp:ro
       - caddy_data:/data
 
 volumes:

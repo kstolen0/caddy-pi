@@ -12,3 +12,12 @@ root * /usr/share/caddy/host/chain
   try_files {path} /index.html
   file_server
 }
+
+
+rtp.kristianstolen.com {
+root * /usr/share/caddy/host/rtp
+  try_files {path} /index.html
+  file_server
+}
+
+
